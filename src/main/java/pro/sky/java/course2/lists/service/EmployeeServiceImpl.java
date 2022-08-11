@@ -11,7 +11,13 @@ public class EmployeeServiceImpl implements EmployeeService {
     private List<Employee> employees;
 
     public EmployeeServiceImpl() {
-        this.employees = new ArrayList<>();
+        this.employees = new ArrayList<>(List.of(
+                new Employee("Станислав", "Лем"),
+                new Employee("Борис", "Стругацкий"),
+                new Employee("Роберт", "Шекли"),
+                new Employee("Стивен", "Кинг"),
+                new Employee("Эдгар", "Берроуз")
+        ));
     }
 
     @Override
